@@ -1,0 +1,15 @@
+.gradient-bg {
+  z-index: -10;
+  background-image: radial-gradient(
+      at 80% 10%,
+      rgba(247, 99, 171, 0.2) 0,
+      transparent 40%
+    ),
+    radial-gradient(at 10% 10%, rgb(99, 158, 247, 0.2) 0, transparent 40%),
+    /* 2 */
+      radial-gradient(at 1% 50%, rgb(247, 99, 170, 0.2) 0, transparent 40%),
+    radial-gradient(at 100% 50%, rgb(99, 158, 247, 0.2) 0, transparent 40%),
+    /* 3 */
+      radial-gradient(at 100% 86%, rgb(247, 99, 170, 0.2) 0, transparent 40%),
+    radial-gradient(at 1% 86%, rgb(99, 158, 247, 0.2) 0, transparent 40%);
+}

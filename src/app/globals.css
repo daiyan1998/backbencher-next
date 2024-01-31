@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Roboto&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #6b40e3;
+    /* --bg-primary: rgb(64, 164, 226); */
+    --bg-secondary: #f863ab;
+
+    --text-style-primary: #140b2d;
+    --text-secondary: #5a5e63;
+    --text-tertiary: #6b40e2;
+    /* --text-tertiary: rgb(64, 164, 226); */
+  }
+}
+
+* {
+  font-family: "Outfit";
+}
+
+/* ---------- Banner Section ---------- */
+.banner-icon {
+  @apply absolute animate-right-left -z-10 h-10 md:h-auto;
+}
+
+.banner-h1 {
+  @apply text-2xl md:text-5xl lg:text-[64px] lg:leading-tight font-semibold text-center text-darkBlue z-10;
+}
+
+.banner-para {
+  @apply lg:w-[520px] md:w-[480px] w-[250px] lg:text-2xl text-sm pt-4 md:pt-8 pb-5 md:pb-12 mx-auto text-skin-secondary;
+}
+
+/* ---------- About Us Section ---------- */
+.about-h1 {
+  @apply text-2xl md:text-5xl font-semibold mb-4 md:mb-6 text-center md:text-left text-darkBlue;
+}
+
+.about-para {
+  @apply text-base md:text-2xl text-center md:text-left text-silver;
+}
+
+.stats-grid {
+  @apply grid grid-cols-2 gap-y-6 md:gap-y-[72px] gap-x-10 md:gap-x-28;
+}
+
+.stats-h1 {
+  @apply md:text-5xl text-2xl font-semibold text-center md:text-left mb-3 text-skin-tertiary;
+}
+
+.stats-para {
+  @apply text-base md:text-xl text-center md:text-left text-darkBlue;
+}
+
+/* ---------- Why Us Section ---------- */
+.whyUs-main-div {
+  @apply flex flex-col-reverse lg:flex-row justify-between gap-8 md:gap-16 my-16 md:my-30;
+}
+
+.whyUs-h1 {
+  @apply text-2xl lg:text-5xl text-center md:text-left font-bold text-darkBlue;
+}
+.whyUs-para {
+  @apply text-silver lg:text-2xl text-center md:text-start;
+}
+
+.card-tilt {
+  @apply bg-gradient-to-b to-white p-0.5 rounded-2xl;
+}
+
+.whyUs-card {
+  /* @apply flex gap-6 border-2 rounded-2xl shadow-[0_4px_30px_#0000001a] backdrop-blur-[1.7px] py-7 px-8; */
+  @apply flex gap-6 bg-white rounded-2xl backdrop-blur-[1.7px] py-7 px-8;
+}
+
+.whyUs-card-h1 {
+  @apply text-darkBlue md:text-2xl text-base;
+}
+
+.whyUs-card-para {
+  @apply text-silver text-xs md:text-base;
+}
+
+/* ---------- Service Section ---------- */
+.service-h1 {
+  @apply text-darkBlue text-2xl md:text-5xl font-semibold mb-5 md:mb-15 text-center mx-auto w-64 md:w-[500px];
+}
+
+.service-card-border {
+  @apply h-[280px] md:h-[400px] bg-gradient-to-b to-white p-0.5 rounded-2xl;
+}
+
+.service-card {
+  @apply h-[278px] md:h-[398px] p-5 md:p-10 bg-white rounded-2xl;
+}
+
+.service-card-h2 {
+  @apply text-darkBlue text-xl md:text-[32px] font-bold pb-2.5;
+}
+
+.service-card-p {
+  @apply text-silver text-xs md:text-xl font-medium line-clamp-5 overflow-hidden my-1.5 md:my-2.5;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.title-style-primary {
+  @apply text-skin-primary font-bold md:text-5xl text-2xl leading-normal;
+}
+
+.text-style-primary {
+  @apply text-skin-secondary text-2xl;
+}
+
+.text-style-secondary {
+  @apply text-skin-secondary text-base;
+}
+
+.bg-style-primary {
+  @apply h-[670px] w-[735px] bg-[#639EF8] rounded-full -z-10 blur-3xl opacity-20;
+}
+
+.bg-style-secondary {
+  @apply h-[670px] w-[735px] bg-[#F863AA] rounded-full -z-10 blur-3xl opacity-20;
+}
+
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+
+.cursor-outline {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #6a3fe2;
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+.btn-primary {
+  @apply bg-primary text-white h-10 px-5 rounded-3xl font-semibold shadow-lg shadow-purple-300 cursor-pointer transition-transform duration-700 ease-out transform hover:translate-x-1 hover:shadow-xl;
+}
+.mapAnim {
+  animation: movingMap 5s infinite ease alternate;
+}
+@keyframes movingMap {
+  from {
+    transform: translateY(-8px);
+  }
+  to {
+    transform: translateY(0px) scale(1.02);
+  }
+}
+.scrollAnim {
+  animation: movingMap 1s infinite ease alternate;
+}
+@keyframes movingMap {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0px) scale(1.02);
+  }
+}
+
+.social-icon-anim {
+  @apply transform transition-transform duration-700 ease-in-out hover:-translate-y-1 hover:shadow-xl shadow-black rounded-full;
+}
+.conncet-anim {
+  @apply transform transition-transform duration-700 ease-in-out hover:-translate-x-1 rounded-full hover:bg-transparent;
+}
+.conncet-anim1 {
+  @apply transform transition-transform duration-700 ease-in-out hover:translate-x-1 rounded-full hover:bg-transparent;
+}

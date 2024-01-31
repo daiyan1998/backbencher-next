@@ -1,0 +1,22 @@
+<svg width="148" height="129" viewBox="0 0 148 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Flutter 1" opacity="0.16" clip-path="url(#clip0_129_1083)">
+<path id="Vector" d="M59.6382 82.9675L43.8291 76.1074L66.102 24.7857L88.7643 15.8394M102.173 49.7943L79.5102 58.7406L74.369 70.5822L90.178 77.4422" fill="#42A5F5" fill-opacity="0.8"/>
+<path id="Vector_2" d="M83.3162 93.2447L95.1564 98.3826L117.819 89.4362L90.1741 77.4404" fill="#0D47A1"/>
+<path id="Vector_3" d="M67.5382 86.384L74.3846 70.5999L90.1653 77.4477L83.3189 93.2318L67.5382 86.384Z" fill="#42A5F5"/>
+<path id="Vector_4" d="M83.322 93.2307L90.1697 77.45L92.3735 78.4063L85.5258 94.187L83.322 93.2307Z" fill="url(#paint0_linear_129_1083)"/>
+<path id="Vector_5" d="M83.3162 93.2447L97.8385 80.797L90.1762 77.4357" fill="url(#paint1_linear_129_1083)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_129_1083" x1="86.746" y1="85.3405" x2="88.9493" y2="86.2965" gradientUnits="userSpaceOnUse">
+<stop offset="0.2" stop-opacity="0.15"/>
+<stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
+</linearGradient>
+<linearGradient id="paint1_linear_129_1083" x1="81.0804" y1="87.5781" x2="97.8944" y2="80.9405" gradientUnits="userSpaceOnUse">
+<stop offset="0.2" stop-opacity="0.55"/>
+<stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
+</linearGradient>
+<clipPath id="clip0_129_1083">
+<rect width="122.647" height="90" fill="white" transform="translate(0 45.0347) rotate(-21.5425)"/>
+</clipPath>
+</defs>
+</svg>
