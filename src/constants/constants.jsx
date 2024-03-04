@@ -26,7 +26,7 @@ export const homeBanner = {
 // web design services content
 export const webDesignHeadingContent = {
   title: (
-    <div>
+    <div className="tracking-wider space-y-4">
       <h1 className="lg:text-5xl text-2xl font-bold mb-16 text-center">
         Captivate Your Audience with
         <span className="text-skin-tertiary mx-4">Web Design Magic</span>
@@ -154,7 +154,7 @@ export const webDesignBanner = {
 
 export const uiDesignHeadingContent = {
   title: (
-    <div>
+    <div className="tracking-wider space-y-4">
       <h1 className="title-style-primary mb-16 text-center">
         Craft Experiences, Not Just Interfaces: Unlocking the Magic of
         <span className="text-skin-tertiary mx-4">UI/UX Design</span>
@@ -165,7 +165,7 @@ export const uiDesignHeadingContent = {
     </div>
   ),
   subPara: (
-    <div className="md:basis-1/2  text-[#000000b3]">
+    <div className="md:basis-1/2  text-[#000000b3] ">
       <p className="pb-[20px]">
         In today&apos;s digital landscape, user experience (UX) is the king, and
         interface (UI) is its dazzling crown. At [Your Agency Name], we
@@ -272,7 +272,7 @@ export const uiDesignBanner = {
 
 export const webHeadingContent = {
   title: (
-    <div>
+    <div className="tracking-wider space-y-4">
       <h1 className="title-style-primary mb-16 text-center">
         Craft Your Digital Empire with Cutting-Edge
         <span className="text-skin-tertiary mx-4">Web Development</span>
@@ -395,7 +395,7 @@ export const webBanner = {
 // graphics design services page content
 export const graphicsHeadingContent = {
   title: (
-    <div>
+    <div className="tracking-wider space-y-4">
       <h1 className="title-style-primary mb-16 text-center">
         Unsheathe Your Brand&apos;s Visual Katana: Graphic Design
         <span className="text-skin-tertiary mx-4">Graphic Design </span> that
@@ -508,7 +508,7 @@ export const graphicsNeedsContent = {
 // Digital marketing page content
 export const digitalHeadingContent = {
   title: (
-    <div>
+    <div className="tracking-wider space-y-4">
       <h1 className="title-style-primary mb-16 text-center">
         From Pixels to Profits: We Craft Tailored
         <span className="text-skin-tertiary mx-4">Digital Marketing</span>
@@ -628,7 +628,7 @@ export const digitalBanner = {
 // app development page content
 export const appHeadingContent = {
   title: (
-    <div>
+    <div className="tracking-wider space-y-4">
       <h1 className="title-style-primary mb-16 text-center">
         Forge Your Digital Excalibur:
         <span className="text-skin-tertiary mx-4">App Development</span>that
