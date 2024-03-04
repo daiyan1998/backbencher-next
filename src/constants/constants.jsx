@@ -26,7 +26,7 @@ export const homeBanner = {
 // web design services content
 export const webDesignHeadingContent = {
   title: (
-    <div className="tracking-wider space-y-4">
+    <div className="tracking-wider space-y-5">
       <h1 className="lg:text-5xl text-2xl font-bold mb-16 text-center">
         Captivate Your Audience with
         <span className="text-skin-tertiary mx-4">Web Design Magic</span>
