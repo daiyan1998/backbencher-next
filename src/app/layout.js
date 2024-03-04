@@ -16,7 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} container mx-auto`}>
+      <body
+        className={`${outfit.className} max-w-7xl mx-auto lg:px-0 px-5 gradient-bg`}
+      >
         <Nav />
         {children}
         <Footer />

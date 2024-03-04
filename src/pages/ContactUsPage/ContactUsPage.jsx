@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { TiMessages } from "react-icons/ti";
