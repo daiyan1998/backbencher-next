@@ -6,7 +6,7 @@ const CardInfoTitle = ({ content }) => {
   return (
     <div>
       {content?.title}
-      <div className="flex flex-wrap justify-center gap-10 mb-[100px]">
+      <div className="flex flex-wrap justify-center gap-10 mb-[100px] mt-10">
         {content?.subTexts.map(({ title, icon, content }) => (
           <div
             key={title}

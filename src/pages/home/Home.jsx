@@ -4,6 +4,8 @@ import Banner from "./Banner/Banner";
 import DigitalImageGallery from "./DigitalImageGallery";
 import Services from "./Services/Services";
 import WhyUs from "./WhyUs/WhyUs";
+import BottomBanner from "@/components/shared/BottomBanner";
+import { homeBanner } from "@/constants/constants";
 const Home = () => {
   return (
     <div>
@@ -12,6 +14,8 @@ const Home = () => {
       <WhyUs />
       <Services />
       <DigitalImageGallery />
+      <BottomBanner content={homeBanner}></BottomBanner>
+      
       <ContactUs />
     </div>
   );
