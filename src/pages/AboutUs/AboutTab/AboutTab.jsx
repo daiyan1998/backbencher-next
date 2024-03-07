@@ -256,7 +256,7 @@ const AboutTab = () => {
                       </div>
                       <ul className="social">
                         <li className="list01">
-                          <Link href={linkedin} target="_blank"><FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                          <Link href={linkedin} target="_blank"><FaLinkedinIn className="border text-[#0092cc] border-opacity-50 rounded-md border-silver p-2 box-content" /></Link>
                         </li>
                         {/* <li className="list02">
                         <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
@@ -291,7 +291,7 @@ const AboutTab = () => {
                             ""
                           ) : (
                             <Link href={linkedin} target="_blank">
-                                <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                                <FaLinkedinIn className="border text-[#0092cc] border-opacity-50 rounded-md border-silver p-2 box-content" /></Link>
                           )}
                         </li>
                         {/* <li className="list02">
@@ -327,7 +327,7 @@ const AboutTab = () => {
                             ""
                           ) : (
                             <Link href={linkedin} target="_blank">
-                                <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                                <FaLinkedinIn className="border text-[#0092cc] border-opacity-50 rounded-md border-silver p-2 box-content" /></Link>
                           )}
                         </li>
                         {/* <li className="list02">
@@ -363,7 +363,7 @@ const AboutTab = () => {
                             ""
                           ) : (
                             <Link href={linkedin} target="_blank">
-                                <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                                <FaLinkedinIn className="border text-[#0092cc] border-opacity-50 rounded-md border-silver p-2 box-content" /></Link>
                           )}
                         </li>
                         {/* <li className="list02">
@@ -399,7 +399,7 @@ const AboutTab = () => {
                             ""
                           ) : (
                             <Link href={linkedin} target="_blank">
-                                <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                                <FaLinkedinIn className="border text-[#0092cc] border-opacity-50 rounded-md border-silver p-2 box-content" /></Link>
                           )}
                         </li>
                         {/* <li className="list02">
@@ -435,7 +435,7 @@ const AboutTab = () => {
                             ""
                           ) : (
                             <Link href={linkedin} target="_blank">
-                                <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                                <FaLinkedinIn className="border text-[#0092cc] border-opacity-50 rounded-md border-silver p-2 box-content" /></Link>
                           )}
                         </li>
                         {/* <li className="list02">

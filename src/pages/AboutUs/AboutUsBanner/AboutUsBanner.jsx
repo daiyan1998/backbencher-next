@@ -1,16 +1,10 @@
 const AboutUsBanner = () => {
   return (
-    <div className="lg:flex gap-5 my-24">
-      <div className="lg:w-1/2 lg:text-5xl text-3xl font-semibold  lg:px-14  mb-10 ">
-        <div>Backbenchers IT House:</div>
-
-        <div className="lg:py-4 py-2">Where Underdogs</div>
-
-        <div>Unleash Digital Titans</div>
-      </div>
-      <div className="lg:w-1/2 py-8 lg:text-base  text-[#000000b3] font-semibold ">
-        <h1> Our Story :</h1>
-        <p>
+    <div className="lg:flex lg:items-center gap-5 my-24 text-center lg:text-left">
+        <h3 className="lg:w-1/2 lg:text-4xl text-3xl font-semibold lg:px-14 !leading-[1.1]"><span className="text-nowrap">Backbenchers IT House:</span><br /> Where Underdogs Unleash Digital Titans</h3>
+      <div className="lg:w-1/2">
+        <h1 className="text-darkBlue font-semibold text-lg"> Our Story :</h1>
+        <p className="text-silver">
           Backbenchers IT House was born from a shared rebellion against the
           sterile, soulless giants who choked life out of innovation. We&apos;re
           Backbenchers IT House, veterans of the trenches with 5+ years combined
