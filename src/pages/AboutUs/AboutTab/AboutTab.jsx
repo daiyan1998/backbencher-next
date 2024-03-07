@@ -26,7 +26,6 @@ import shajalal from "@/assets/Tabpic/Untitled-19.png";
 import mursalin from "@/assets/Tabpic/Untitled-3.png";
 import reza from "@/assets/Tabpic/Untitled-10.png";
 import { FaLinkedinIn } from "react-icons/fa";
-import Linkedin from "@/assets/icons/social/Link.svg";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -73,7 +72,7 @@ const AboutTab = () => {
       name: "Md Moinur Mahbub Al Amin",
       designation: "Sr. Web Developer",
       photoUrl: amin,
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/mdmmalamin/",
     },
     {
       name: "Md Shajalal Hossen",
@@ -219,8 +218,8 @@ const AboutTab = () => {
           {/* ... existing tabs ... */}
           {tabItem.map((ti) => (
             <Tab
-              className={`py-2 px-2 border-blue-200 border-2 mx-1 rounded-lg focus:outline-none transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-400 hover:text-black ${
-                activeTab === ti.value ? "bg-blue-400 text-black" : ""
+              className={`py-2 px-2 border-primary border-2 mx-1 rounded-lg focus:outline-none transition duration-300 ease-in-out transform hover:scale-95 hover:bg-primary/80 hover:text-white ${
+                activeTab === ti.value ? "bg-primary text-black hover:text-black" : ""
               }`}
               onClick={() => handleTabChange(ti.value)}
               value={ti.value}
@@ -245,23 +244,25 @@ const AboutTab = () => {
             {FoundingMembers.map(
               ({ name, photoUrl, linkedin, designation }) => (
                 <div key={name} className="container">
-                  <div className="card">
-                    <div className="content opacity-50 duration-500">
-                      <div className="imgBox">
-                        <Image src={photoUrl} alt={`${designation} image`} className="h-[300px] w-[268px] img" />
+                  <div className="bgBlur">
+                    <div className="card">
+                      <div className="content">
+                        <div className="imgBox">
+                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                        </div>
+                        <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
+                          <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
+                        </div>
                       </div>
-                      <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
-                        <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
-                      </div>
+                      <ul className="social">
+                        <li className="list01">
+                          <Link href={linkedin} target="_blank"><FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                        </li>
+                        {/* <li className="list02">
+                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        </li> */}
+                      </ul>
                     </div>
-                    <ul className="social">
-                      <li className="list01 text-white">
-                        <Link href={linkedin}><FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
-                      </li>
-                      {/* <li className="list02">
-                      <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
-                      </li> */}
-                    </ul>
                   </div>
                 </div>
               )
@@ -273,28 +274,31 @@ const AboutTab = () => {
           >
             {webDeveloperMembers.map(
               ({ name, photoUrl, linkedin, designation }) => (
-                <div
-                  key={name}
-                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl shadow-blue-200 text-center flex flex-col justify-around rounded-md"
-                >
-                  <Image
-                    src={photoUrl}
-                    alt=""
-                    className="rounded-md h-[300px] w-[268px] "
-                  />
-                  <div>
-                    <p className="text-2xl font-semibold">{name}</p>
-                    <p className="text-xl text-gray-500">{designation}</p>
-                  </div>
-                  <div className="flex justify-center gap-3 text-2xl">
-                    {linkedin === "" ? (
-                      ""
-                    ) : (
-                      <a href={linkedin} target="_blank">
-                        {" "}
-                        <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-3 box-content" />
-                      </a>
-                    )}
+                <div key={name} className="container">
+                  <div className="bgBlur">
+                    <div className="card">
+                      <div className="content">
+                        <div className="imgBox">
+                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                        </div>
+                        <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
+                          <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
+                        </div>
+                      </div>
+                      <ul className="social">
+                        <li className="list01">
+                          {linkedin === "" ? (
+                            ""
+                          ) : (
+                            <Link href={linkedin} target="_blank">
+                                <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                          )}
+                        </li>
+                        {/* <li className="list02">
+                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        </li> */}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               )
@@ -306,28 +310,31 @@ const AboutTab = () => {
           >
             {appDeveloperMembers.map(
               ({ name, photoUrl, linkedin, designation }) => (
-                <div
-                  key={name}
-                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl shadow-blue-200 text-center flex flex-col justify-around rounded-md"
-                >
-                  <Image
-                    src={photoUrl}
-                    alt=""
-                    className="rounded-md h-[300px] w-[268px] "
-                  />
-                  <div>
-                    <p className="text-2xl font-semibold">{name}</p>
-                    <p className="text-xl text-gray-500">{designation}</p>
-                  </div>
-                  <div className="flex justify-center gap-3 text-2xl">
-                    {linkedin === "" ? (
-                      ""
-                    ) : (
-                      <a href={linkedin} target="_blank">
-                        {" "}
-                        <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-3 box-content" />
-                      </a>
-                    )}
+                <div key={name} className="container">
+                  <div className="bgBlur">
+                    <div className="card">
+                      <div className="content">
+                        <div className="imgBox">
+                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                        </div>
+                        <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
+                          <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
+                        </div>
+                      </div>
+                      <ul className="social">
+                        <li className="list01">
+                          {linkedin === "" ? (
+                            ""
+                          ) : (
+                            <Link href={linkedin} target="_blank">
+                                <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                          )}
+                        </li>
+                        {/* <li className="list02">
+                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        </li> */}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               )
@@ -339,28 +346,31 @@ const AboutTab = () => {
           >
             {digitalMarketingMembers.map(
               ({ name, photoUrl, linkedin, designation }) => (
-                <div
-                  key={name}
-                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl shadow-blue-200 text-center flex flex-col justify-around rounded-md"
-                >
-                  <Image
-                    src={photoUrl}
-                    alt=""
-                    className="rounded-md h-[300px] w-[268px] "
-                  />
-                  <div>
-                    <p className="text-2xl font-semibold">{name}</p>
-                    <p className="text-xl text-gray-500">{designation}</p>
-                  </div>
-                  <div className="flex justify-center gap-3 text-2xl">
-                    {linkedin === "" ? (
-                      ""
-                    ) : (
-                      <a href={linkedin} target="_blank">
-                        {" "}
-                        <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-3 box-content" />
-                      </a>
-                    )}
+                <div key={name} className="container">
+                  <div className="bgBlur">
+                    <div className="card">
+                      <div className="content">
+                        <div className="imgBox">
+                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                        </div>
+                        <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
+                          <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
+                        </div>
+                      </div>
+                      <ul className="social">
+                        <li className="list01">
+                          {linkedin === "" ? (
+                            ""
+                          ) : (
+                            <Link href={linkedin} target="_blank">
+                                <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                          )}
+                        </li>
+                        {/* <li className="list02">
+                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        </li> */}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               )
@@ -372,28 +382,31 @@ const AboutTab = () => {
           >
             {webDesignerMembers.map(
               ({ name, photoUrl, linkedin, designation }) => (
-                <div
-                  key={name}
-                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl shadow-blue-200 text-center flex flex-col justify-around rounded-md"
-                >
-                  <Image
-                    src={photoUrl}
-                    alt=""
-                    className="rounded-md h-[300px] w-[268px] "
-                  />
-                  <div>
-                    <p className="text-2xl font-semibold">{name}</p>
-                    <p className="text-xl text-gray-500">{designation}</p>
-                  </div>
-                  <div className="flex justify-center gap-3 text-2xl">
-                    {linkedin === "" ? (
-                      ""
-                    ) : (
-                      <a href={linkedin} target="_blank">
-                        {" "}
-                        <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-3 box-content" />
-                      </a>
-                    )}
+                <div key={name} className="container">
+                  <div className="bgBlur">
+                    <div className="card">
+                      <div className="content">
+                        <div className="imgBox">
+                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                        </div>
+                        <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
+                          <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
+                        </div>
+                      </div>
+                      <ul className="social">
+                        <li className="list01">
+                          {linkedin === "" ? (
+                            ""
+                          ) : (
+                            <Link href={linkedin} target="_blank">
+                                <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                          )}
+                        </li>
+                        {/* <li className="list02">
+                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        </li> */}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               )
@@ -405,28 +418,31 @@ const AboutTab = () => {
           >
             {graphicDesignerMembers.map(
               ({ name, photoUrl, linkedin, designation }) => (
-                <div
-                  key={name}
-                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl shadow-blue-200 text-center flex flex-col justify-around rounded-md"
-                >
-                  <Image
-                    src={photoUrl}
-                    alt=""
-                    className="rounded-md h-[300px] w-[268px] "
-                  />
-                  <div>
-                    <p className="text-2xl font-semibold">{name}</p>
-                    <p className="text-xl text-gray-500">{designation}</p>
-                  </div>
-                  <div className="flex justify-center gap-3 text-2xl">
-                    {linkedin === "" ? (
-                      ""
-                    ) : (
-                      <a href={linkedin} target="_blank">
-                        {" "}
-                        <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-3 box-content" />
-                      </a>
-                    )}
+                <div key={name} className="container">
+                  <div className="bgBlur">
+                    <div className="card">
+                      <div className="content">
+                        <div className="imgBox">
+                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                        </div>
+                        <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
+                          <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
+                        </div>
+                      </div>
+                      <ul className="social">
+                        <li className="list01">
+                          {linkedin === "" ? (
+                            ""
+                          ) : (
+                            <Link href={linkedin} target="_blank">
+                                <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                          )}
+                        </li>
+                        {/* <li className="list02">
+                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        </li> */}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               )

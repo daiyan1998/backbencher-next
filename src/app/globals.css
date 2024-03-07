@@ -204,12 +204,20 @@
 
 /* ---------- About Us Section ---------- */
 @layer utilities {
+  .container .bgBlur {
+    @apply  h-[400px] w-[300px] ;
+  }
+
+  .bgBlur {
+    @apply bg-primary/10 hover:bg-primary/5 rounded-2xl backdrop-blur-2xl mx-auto;
+  }
+
   .container .card {
-    @apply bg-primary/5 shadow-md shadow-primary/20 backdrop-blur-3xl rounded-2xl h-[400px] w-[300px] flex justify-center items-center;
+    @apply shadow-lg shadow-primary/20 rounded-2xl h-full w-full flex justify-center items-center;
   }
 
   .container .card .content {
-    @apply relative flex flex-col justify-center items-center opacity-80 duration-500;
+    @apply relative flex flex-col justify-center items-center opacity-90 duration-500;
   }
 
   .container .card:hover .content {
@@ -217,7 +225,7 @@
   }
 
   .container .card .content .imgBox {
-    @apply relative w-52 h-52 rounded-full overflow-hidden border-8 border-transparent outline-primary outline-dotted outline-offset-1 outline-4;
+    @apply relative w-52 h-52 rounded-full overflow-hidden border-[5px] border-white outline-primary outline-dotted outline-offset-1 outline-4  text-center mt-2.5 text-xl text-darkBlue font-semibold;
   }
 
   .container .card .content .imgBox .img {
@@ -233,7 +241,7 @@
   }
 
   .container .card:hover .social li {
-    @apply translate-y-0 opacity-100;
+    @apply translate-y-4 opacity-100;
   }
 }
 
