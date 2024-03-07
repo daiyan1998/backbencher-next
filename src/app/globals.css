@@ -205,27 +205,50 @@
 /* ---------- About Us Section ---------- */
 @layer utilities {
   .container .card {
-    @apply bg-primary/5 shadow-md shadow-primary/20 backdrop-blur-md rounded-2xl h-[400px] w-[300px] flex justify-center items-center;
+    @apply bg-primary/5 shadow-md shadow-primary/20 backdrop-blur-3xl rounded-2xl h-[400px] w-[300px] flex justify-center items-center;
   }
 
   .container .card .content {
-    @apply relative flex flex-col justify-center items-center opacity-50 duration-500;
+    @apply relative flex flex-col justify-center items-center opacity-80 duration-500;
   }
 
   .container .card:hover .content {
-    @apply opacity-100;
+    @apply opacity-100 -translate-y-5;
   }
 
   .container .card .content .imgBox {
-    @apply relative w-52 h-52 rounded-full overflow-hidden border-8 border-white outline-dotted outline-offset-1 outline-4;
+    @apply relative w-52 h-52 rounded-full overflow-hidden border-8 border-transparent outline-primary outline-dotted outline-offset-1 outline-4;
   }
 
   .container .card .content .imgBox .img {
-    @apply absolute top-0 left-0 w-full h-full object-cover;
-  }
-
-  .container .card .content .contentBox h3 span {
-    @apply text-t;
+    @apply absolute top-0 left-0 w-full h-full object-cover object-top;
   }
   
+  .container .card .social {
+    @apply absolute bottom-14 flex;
+  }
+
+  .container .card .social li {
+    @apply mx-2.5 translate-y-10 duration-500 opacity-0;
+  }
+
+  .container .card:hover .social li {
+    @apply translate-y-0 opacity-100;
+  }
+}
+
+@layer components {
+  .nonagon {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  }
+  
+  .list01 {
+    --i: 1;
+  }
+  .list02 {
+    --i: 2;
+  }
+  .container .card .social li {
+    transition-delay: calc(0.1s * var(--i));
+  }
 }

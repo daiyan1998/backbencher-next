@@ -26,6 +26,7 @@ import shajalal from "@/assets/Tabpic/Untitled-19.png";
 import mursalin from "@/assets/Tabpic/Untitled-3.png";
 import reza from "@/assets/Tabpic/Untitled-10.png";
 import { FaLinkedinIn } from "react-icons/fa";
+import Linkedin from "@/assets/icons/social/Link.svg";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -247,18 +248,21 @@ const AboutTab = () => {
                   <div className="card">
                     <div className="content opacity-50 duration-500">
                       <div className="imgBox">
-                        <Image src={photoUrl} alt={`${designation} image`} className="rounded-md h-[300px] w-[268px] img" />
+                        <Image src={photoUrl} alt={`${designation} image`} className="h-[300px] w-[268px] img" />
                       </div>
-                      <div className="contentBox">
-                        <h3>{name} <br /><span>{designation}</span></h3>
+                      <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
+                        <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
                       </div>
                     </div>
+                    <ul className="social">
+                      <li className="list01 text-white">
+                        <Link href={linkedin}><FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-2 box-content" /></Link>
+                      </li>
+                      {/* <li className="list02">
+                      <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                      </li> */}
+                    </ul>
                   </div>
-                  <ul>
-                    <li>
-                      <Link href={linkedin}>IN</Link>
-                    </li>
-                  </ul>
                 </div>
               )
             )}
