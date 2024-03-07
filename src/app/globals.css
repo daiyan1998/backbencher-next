@@ -199,3 +199,33 @@
 .conncet-anim1 {
   @apply transform transition-transform duration-700 ease-in-out hover:translate-x-1 rounded-full hover:bg-transparent;
 }
+
+
+
+/* ---------- About Us Section ---------- */
+@layer utilities {
+  .container .card {
+    @apply bg-primary/5 shadow-md shadow-primary/20 backdrop-blur-md rounded-2xl h-[400px] w-[300px] flex justify-center items-center;
+  }
+
+  .container .card .content {
+    @apply relative flex flex-col justify-center items-center opacity-50 duration-500;
+  }
+
+  .container .card:hover .content {
+    @apply opacity-100;
+  }
+
+  .container .card .content .imgBox {
+    @apply relative w-52 h-52 rounded-full overflow-hidden border-8 border-white outline-dotted outline-offset-1 outline-4;
+  }
+
+  .container .card .content .imgBox .img {
+    @apply absolute top-0 left-0 w-full h-full object-cover;
+  }
+
+  .container .card .content .contentBox h3 span {
+    @apply text-t;
+  }
+  
+}

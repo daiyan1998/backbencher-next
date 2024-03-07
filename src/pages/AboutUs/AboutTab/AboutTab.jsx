@@ -28,6 +28,7 @@ import reza from "@/assets/Tabpic/Untitled-10.png";
 import { FaLinkedinIn } from "react-icons/fa";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutTab = () => {
   const teamMembers = [
@@ -41,7 +42,7 @@ const AboutTab = () => {
       name: "Emon Ahmed",
       designation: "CFO",
       photoUrl: emon,
-      linkedin: "www.linkedin.com/in/emon-ahmed-9b0746248",
+      linkedin: "https://www.linkedin.com/in/emon-ahmed-9b0746248",
     },
     {
       name: "Ajharul Islam Akanda",
@@ -237,35 +238,27 @@ const AboutTab = () => {
         >
           {/* ... existing TabPanel sections ... */}
           <TabPanel
-            className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 my-5 "
+            className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 my-5"
             value="FoundingMembers"
           >
             {FoundingMembers.map(
               ({ name, photoUrl, linkedin, designation }) => (
-                <div
-                  key={name}
-                  className="p-4 h-[420px] w-[290px]  shadow-xl bg-white
-       shadow-blue-200 text-center flex flex-col justify-around rounded-md "
-                >
-                  <Image
-                    src={photoUrl}
-                    alt=""
-                    className="rounded-md h-[300px] w-[268px] "
-                  />
-                  <div>
-                    <p className="text-2xl font-semibold">{name}</p>
-                    <p className="text-xl text-gray-500">{designation}</p>
+                <div key={name} className="container">
+                  <div className="card">
+                    <div className="content opacity-50 duration-500">
+                      <div className="imgBox">
+                        <Image src={photoUrl} alt={`${designation} image`} className="rounded-md h-[300px] w-[268px] img" />
+                      </div>
+                      <div className="contentBox">
+                        <h3>{name} <br /><span>{designation}</span></h3>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex justify-center gap-3 text-2xl">
-                    {linkedin === "" ? (
-                      ""
-                    ) : (
-                      <a href={linkedin} target="_blank">
-                        {" "}
-                        <FaLinkedinIn className=" border text-[#0092cc] border-opacity-30 rounded-md border-gray-400 p-3 box-content" />
-                      </a>
-                    )}
-                  </div>
+                  <ul>
+                    <li>
+                      <Link href={linkedin}>IN</Link>
+                    </li>
+                  </ul>
                 </div>
               )
             )}
@@ -278,8 +271,7 @@ const AboutTab = () => {
               ({ name, photoUrl, linkedin, designation }) => (
                 <div
                   key={name}
-                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl 
-          shadow-blue-200 text-center flex flex-col justify-around rounded-md"
+                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl shadow-blue-200 text-center flex flex-col justify-around rounded-md"
                 >
                   <Image
                     src={photoUrl}
@@ -312,8 +304,7 @@ const AboutTab = () => {
               ({ name, photoUrl, linkedin, designation }) => (
                 <div
                   key={name}
-                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl 
-       shadow-blue-200 text-center flex flex-col justify-around rounded-md"
+                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl shadow-blue-200 text-center flex flex-col justify-around rounded-md"
                 >
                   <Image
                     src={photoUrl}
@@ -346,8 +337,7 @@ const AboutTab = () => {
               ({ name, photoUrl, linkedin, designation }) => (
                 <div
                   key={name}
-                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl 
-       shadow-blue-200 text-center flex flex-col justify-around rounded-md"
+                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl shadow-blue-200 text-center flex flex-col justify-around rounded-md"
                 >
                   <Image
                     src={photoUrl}
@@ -380,8 +370,7 @@ const AboutTab = () => {
               ({ name, photoUrl, linkedin, designation }) => (
                 <div
                   key={name}
-                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl 
-       shadow-blue-200 text-center flex flex-col justify-around rounded-md"
+                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl shadow-blue-200 text-center flex flex-col justify-around rounded-md"
                 >
                   <Image
                     src={photoUrl}
@@ -414,8 +403,7 @@ const AboutTab = () => {
               ({ name, photoUrl, linkedin, designation }) => (
                 <div
                   key={name}
-                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl 
-       shadow-blue-200 text-center flex flex-col justify-around rounded-md"
+                  className="p-4 h-[420px] w-[290px] bg-white shadow-xl shadow-blue-200 text-center flex flex-col justify-around rounded-md"
                 >
                   <Image
                     src={photoUrl}
