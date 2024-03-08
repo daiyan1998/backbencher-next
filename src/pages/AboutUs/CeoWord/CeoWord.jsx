@@ -2,10 +2,8 @@ import ceoImage from "@/assets/Tabpic/Untitled-11.png";
 import Image from "next/image";
 const CeoWord = () => {
   return (
-    <div className=" lg:flex gap-5 mb-24">
-      <div className="lg:w-1/3 lg:h-[550px]">
-        <Image className="" src={ceoImage} alt="" />
-      </div>
+    <div className="flex flex-col lg:flex lg:flex-row justify-around items-center mb-24 text-center">
+        <Image className="h-[400px] w-fit object-cover" src={ceoImage} alt="Shibly Sadique" />
       <div className="lg:w-1/2 space-y-5 py-16">
         <h1 className="lg:text-5xl text-3xl  font-semibold">CEO’s Word</h1>
         <p className="lg:text-2xl text-xl text-skin-tertiary font-semibold">

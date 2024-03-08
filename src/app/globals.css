@@ -199,3 +199,66 @@
 .conncet-anim1 {
   @apply transform transition-transform duration-700 ease-in-out hover:translate-x-1 rounded-full hover:bg-transparent;
 }
+
+
+
+/* -------------------- About Us Section Start -------------------- */
+@layer utilities {
+  .container .bgBlur {
+    @apply  h-[400px] w-[300px] ;
+  }
+
+  .bgBlur {
+    @apply bg-primary/10 hover:bg-primary/5 rounded-2xl backdrop-blur-2xl mx-auto;
+  }
+
+  .container .card {
+    @apply shadow-lg shadow-primary/20 rounded-2xl h-full w-full flex justify-center items-center;
+  }
+
+  .container .card .content {
+    @apply relative flex flex-col justify-center items-center opacity-90 duration-500;
+  }
+
+  .container .card:hover .content {
+    @apply opacity-100 -translate-y-5;
+  }
+
+  .container .card .content .imgBox {
+    @apply relative w-52 h-52 rounded-full overflow-hidden border-[5px] border-white outline-primary outline-dotted outline-offset-1 outline-4  text-center mt-2.5 text-xl text-darkBlue font-semibold;
+  }
+
+  .container .card .content .imgBox .img {
+    @apply absolute top-0 left-0 w-full h-full object-cover object-top;
+  }
+  
+  .container .card .social {
+    @apply absolute bottom-14 flex;
+  }
+
+  .container .card .social li {
+    @apply mx-2.5 translate-y-10 duration-500 opacity-0;
+  }
+
+  .container .card:hover .social li {
+    @apply translate-y-4 opacity-100;
+  }
+}
+
+@layer components {
+  .heptagon {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  }
+  
+  .list01 {
+    --i: 1;
+  }
+  .list02 {
+    --i: 2;
+  }
+  .container .card .social li {
+    transition-delay: calc(0.1s * var(--i));
+  }
+}
+
+/* -------------------- About Us Section End -------------------- */
