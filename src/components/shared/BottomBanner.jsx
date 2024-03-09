@@ -20,11 +20,11 @@ const BottomBanner = ({ content }) => {
   const handleOpen = () => setOpen(!open);
   return (
     <div className="flex justify-center bg-primary text-white rounded-3xl relative my-[120px]">
-      <div className="flex flex-col items-center md:py-16 p-10">
+      <div className="flex flex-col items-center md:py-20 p-10">
         <h1 className="pb-3 md:text-5xl text-3xl text-center font-bold">
           {content?.title}
         </h1>
-        <div className="text-center w-3/4 mx-auto pb-8">
+        <div className="text-center md:w-3/4 mx-auto pb-8">
           <p className="  font-medium">
             {content?.subPara} {content?.subPara2} {content?.subPara3}
           </p>
@@ -32,7 +32,7 @@ const BottomBanner = ({ content }) => {
 
         <button
           onClick={handleOpen}
-          className="px-9 py-4 border rounded-full bg-white text-black font-semibold text-xl"
+          className="px-9 py-4 border rounded-full bg-white text-black font-semibold text-xl z-10"
         >
           Schedule a Consultation
         </button>
@@ -148,23 +148,23 @@ const BottomBanner = ({ content }) => {
       {/* bg icons */}
       <div>
         <Image
-          className="absolute top-14 right-24"
+          className="absolute w-24 md:w-32 top-14 right-24"
           src={html5}
           alt="html5 icon"
         />
-        <Image className="absolute bottom-12 right-40" src={js} alt="js icon" />
+        <Image className="absolute w-16 md:w-24 bottom-12 right-24 md:right-44" src={js} alt="js icon" />
         <Image
-          className="absolute top-7 left-48"
+          className="absolute w-20 md:w-32 top-7 left-48"
           src={figma}
           alt="figma icon"
         />
         <Image
-          className="absolute top-24 left-5"
+          className="absolute w-24 md:w-32 top-24 left-5"
           src={flutter}
           alt="flutter icon"
         />
         <Image
-          className="absolute bottom-12 left-44"
+          className="absolute w-20 md:w-32  bottom-16 left-20 md:left-44"
           src={css3}
           alt="css3 icon"
         />

@@ -24,7 +24,7 @@ const ContactUsPage = () => {
         </p>
       </div>
       <div className="part2 ">
-        <h1 className="text-4xl font-semibold my-10">Have Any Questions?</h1>
+        <h1 className="text-4xl font-semibold flex justify-center md:justify-start items-center my-10">Have Any Questions?</h1>
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10">
           <div className="basis-1/2 bg-slate-50 p-14 rounded-xl shadow-lg">
             <form

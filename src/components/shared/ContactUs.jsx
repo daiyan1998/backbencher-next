@@ -6,7 +6,7 @@ import ReactWhatsapp from "react-whatsapp";
 
 const ContactUs = () => {
   return (
-    <div className="sm:flex  md:mt-40 mt-10 text-center md:text-left gap-10 mb-[120px]">
+    <div className="md:flex  md:mt-40 mt-10 text-center md:text-left gap-10 mb-[120px]">
       <div className="md:text-2xl basis-1/2">
         <p className="title-style-primary md:mb-4">Get in touch</p>
         <p className="md:text-style-primary mb-[60px] md:w-4/5">
@@ -15,7 +15,7 @@ const ContactUs = () => {
           ideas to life. Fill out the form below, and one of our experts will
           get back to you shortly.
         </p>
-        <div className="flex items-center gap-4 mb-5 conncet-anim1 ">
+        <div className="flex items-center justify-center md:justify-start gap-4 mb-5 conncet-anim1 ">
           <span>
             <IoLogoWhatsapp className=" text-green-500 text-4xl" />
           </span>
@@ -29,7 +29,7 @@ const ContactUs = () => {
             +8801986298579
           </ReactWhatsapp>
         </div>
-        <div className="flex items-center gap-4 conncet-anim1 ">
+        <div className="flex items-center justify-center md:justify-start gap-4 conncet-anim1 ">
           <span>
             <TiMessages className="text-skin-tertiary text-4xl " />
           </span>
@@ -42,7 +42,7 @@ const ContactUs = () => {
         <form
           action="https://getform.io/f/99f98217-5577-4d61-92bb-fe62f5f7e80a"
           method="POST"
-          className="w-full max-w-lg"
+          className="md:w-full w-3/4 mx-auto max-w-lg mt-10"
         >
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">

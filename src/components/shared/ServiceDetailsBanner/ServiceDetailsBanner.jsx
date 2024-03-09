@@ -7,7 +7,7 @@ const ServiceDetailsBanner = ({ content }) => {
       {content?.title}
       <div className="flex  gap-20 md:my-20 ">
         <div className="w-1/2 flex items-center hidden md:block justify-center">
-          <Image className="w-1/2  h-1/2" src={banner4} alt="" />
+          <Image className="w-1/2   h-1/2" src={banner4} alt="" />
         </div>
 
         <div className="w-full space-y-10">

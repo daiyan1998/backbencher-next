@@ -81,7 +81,7 @@ const Banner = () => {
             Schedule A Call
           </button>
           <Image
-            className="absolute animate-arrow-anim -z-10 h-10 md:h-auto -right-20 md:-right-32 top-1"
+            className="absolute animate-arrow-anim -z-10 h-10 md:h-auto -right-32 md:-right-32 top-1"
             src={btnArrow}
             alt="Schedule A Call button"
           />

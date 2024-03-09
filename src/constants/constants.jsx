@@ -18,7 +18,12 @@ import ScheduleCallButton from "@/Components/Shared/ScheduleCallButton/ScheduleC
 
 // home page bottom Banner content
 export const homeBanner = {
-  title: "Embrace the Future of Digital Success",
+  title: (
+  <div>
+    <h1>Embrace the Future of <br /> Digital Success</h1>
+  </div>
+  
+  ),
   subPara:
     "Together, we&apos;ll craft a digital strategy that propels your business to new heights of growth and profitability.",
 };
@@ -28,8 +33,8 @@ export const webDesignHeadingContent = {
   title: (
     <div className="tracking-wider space-y-5">
       <h1 className="lg:text-5xl text-2xl font-bold mb-16 text-center">
-        Captivate Your Audience with
-        <span className="text-skin-tertiary mx-4">Web Design Magic</span>
+        Captivate Your Audience with 
+        <span className="text-skin-tertiary mx-4"><br /> Web Design Magic</span>
       </h1>
       <div className="text-center">
         <ScheduleCallButton></ScheduleCallButton>
@@ -157,7 +162,7 @@ export const uiDesignHeadingContent = {
     <div className="tracking-wider space-y-4">
       <h1 className="title-style-primary mb-16 text-center">
         Craft Experiences, Not Just Interfaces: Unlocking the Magic of
-        <span className="text-skin-tertiary mx-4">UI/UX Design</span>
+        <span className="text-skin-tertiary mx-4"><br />UI/UX Design</span>
       </h1>
       <div className="text-center">
         <ScheduleCallButton></ScheduleCallButton>
@@ -166,7 +171,7 @@ export const uiDesignHeadingContent = {
   ),
   subPara: (
     <div className="md:basis-1/2  text-[#000000b3] ">
-      <p className="pb-[20px]">
+      <p className="pb-[20px] pt-4">
         In today&apos;s digital landscape, user experience (UX) is the king, and
         interface (UI) is its dazzling crown. At [Your Agency Name], we
         don&apos;t just build interfaces; we craft experiences that captivate,
@@ -275,7 +280,7 @@ export const webHeadingContent = {
     <div className="tracking-wider space-y-4">
       <h1 className="title-style-primary mb-16 text-center">
         Craft Your Digital Empire with Cutting-Edge
-        <span className="text-skin-tertiary mx-4">Web Development</span>
+        <span className="text-skin-tertiary mx-4"> <br />Web Development</span>
       </h1>
       <div className="text-center">
         <ScheduleCallButton></ScheduleCallButton>
@@ -284,7 +289,7 @@ export const webHeadingContent = {
   ),
   subPara: (
     <div className="md:basis-1/2  text-[#000000b3]">
-      <p className="pb-[20px]">
+      <p className="pb-[20px] pt-4 ">
         In today&apos;s digital landscape, your website is more than just an
         online presence; it&apos;s your digital storefront, your brand
         ambassador, and the driving force behind customer engagement and
@@ -397,8 +402,8 @@ export const graphicsHeadingContent = {
   title: (
     <div className="tracking-wider space-y-4">
       <h1 className="title-style-primary mb-16 text-center">
-        Unsheathe Your Brand&apos;s Visual Katana: Graphic Design
-        <span className="text-skin-tertiary mx-4">Graphic Design </span> that
+        Unsheathe Your Brand&apos;s Visual Katana: 
+        <span className="text-skin-tertiary mx-4"><br />Graphic Design </span> that
         Slashes Through Noise and Conquers Hearts
       </h1>
       <div className="text-center">
@@ -409,7 +414,7 @@ export const graphicsHeadingContent = {
 
   subPara: (
     <div className="md:basis-1/2  text-[#000000b3]">
-      <p className="pb-[20px]">
+      <p className="pb-[20px] pt-4">
         In today&apos;s digital arena, mere aesthetics are lost arrows in a
         cacophony of pixels. At Backbenchers IT House, we&apos;re not graphic
         designers; we&apos;re digital samurai, wielding the precision of design
@@ -511,7 +516,7 @@ export const digitalHeadingContent = {
     <div className="tracking-wider space-y-4">
       <h1 className="title-style-primary mb-16 text-center">
         From Pixels to Profits: We Craft Tailored
-        <span className="text-skin-tertiary mx-4">Digital Marketing</span>
+        <span className="text-skin-tertiary mx-4"> <br />Digital Marketing</span>
         Solutions for Your Unstoppable Growth
       </h1>
       <div className="text-center">
@@ -522,7 +527,7 @@ export const digitalHeadingContent = {
 
   subPara: (
     <div className="md:basis-1/2  text-[#000000b3]">
-      <p className="pb-[20px]">
+      <p className="pb-[20px] pt-4">
         In today&apos;s digital jungle, mere presence isn&apos;t enough. You
         need a strategic safari, a customized roadmap to navigate the
         ever-shifting digital terrain and claim your rightful throne. At
@@ -631,7 +636,7 @@ export const appHeadingContent = {
     <div className="tracking-wider space-y-4">
       <h1 className="title-style-primary mb-16 text-center">
         Forge Your Digital Excalibur:
-        <span className="text-skin-tertiary mx-4">App Development</span>that
+        <span className="text-skin-tertiary mx-4"><br />App Development</span>that
         Slashes Through Competition and Claims Market Share{" "}
       </h1>
       <div className="text-center">
@@ -642,7 +647,7 @@ export const appHeadingContent = {
 
   subPara: (
     <div className="md:basis-1/2  text-[#000000b3]">
-      <p className="pb-[20px]">
+      <p className="pb-[20px] pt-4">
         In today&apos;s digital jungle, mere presence isn&apos;t enough. You
         need a strategic safari, a customized roadmap to navigate the
         ever-shifting digital terrain and claim your rightful throne. At

@@ -14,9 +14,8 @@ const Home = () => {
       <WhyUs />
       <Services />
       <DigitalImageGallery />
-      <BottomBanner content={homeBanner}></BottomBanner>
-      
       <ContactUs />
+      <BottomBanner content={homeBanner}></BottomBanner>
     </div>
   );
 };
