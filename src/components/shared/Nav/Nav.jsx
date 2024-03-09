@@ -44,7 +44,7 @@ function NavListMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const renderItems = navListMenuItems.map(({ icon, title, to }) => (
-    <Link href={to} key={to}>
+    <Link href={to} key={to} onClick={() => setIsMobileMenuOpen((cur) => !cur)}>
       <MenuItem className="flex items-center gap-3 rounded-lg">
         <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2">
           <Image src={icon} alt="" />
