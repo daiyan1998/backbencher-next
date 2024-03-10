@@ -248,7 +248,7 @@ const AboutTab = () => {
                     <div className="card">
                       <div className="content">
                         <div className="imgBox">
-                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                          <Image placeholder="blur" src={photoUrl} alt={`${designation} image`} className="img" />
                         </div>
                         <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
                           <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
@@ -259,7 +259,7 @@ const AboutTab = () => {
                           <Link href={linkedin} target="_blank"><FaLinkedinIn className="border text-[#0092cc] border-opacity-50 rounded-md border-silver p-2 box-content" /></Link>
                         </li>
                         {/* <li className="list02">
-                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        <Link href={linkedin}><Image placeholder="blur" src={Linkedin} alt="{name} linkedin profile" /></Link>
                         </li> */}
                       </ul>
                     </div>
@@ -279,7 +279,7 @@ const AboutTab = () => {
                     <div className="card">
                       <div className="content">
                         <div className="imgBox">
-                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                          <Image placeholder="blur" src={photoUrl} alt={`${designation} image`} className="img" />
                         </div>
                         <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
                           <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
@@ -295,7 +295,7 @@ const AboutTab = () => {
                           )}
                         </li>
                         {/* <li className="list02">
-                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        <Link href={linkedin}><Image placeholder="blur" src={Linkedin} alt="{name} linkedin profile" /></Link>
                         </li> */}
                       </ul>
                     </div>
@@ -315,7 +315,7 @@ const AboutTab = () => {
                     <div className="card">
                       <div className="content">
                         <div className="imgBox">
-                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                          <Image placeholder="blur" src={photoUrl} alt={`${designation} image`} className="img" />
                         </div>
                         <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
                           <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
@@ -331,7 +331,7 @@ const AboutTab = () => {
                           )}
                         </li>
                         {/* <li className="list02">
-                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        <Link href={linkedin}><Image placeholder="blur" src={Linkedin} alt="{name} linkedin profile" /></Link>
                         </li> */}
                       </ul>
                     </div>
@@ -351,7 +351,7 @@ const AboutTab = () => {
                     <div className="card">
                       <div className="content">
                         <div className="imgBox">
-                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                          <Image placeholder="blur" src={photoUrl} alt={`${designation} image`} className="img" />
                         </div>
                         <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
                           <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
@@ -367,7 +367,7 @@ const AboutTab = () => {
                           )}
                         </li>
                         {/* <li className="list02">
-                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        <Link href={linkedin}><Image placeholder="blur" src={Linkedin} alt="{name} linkedin profile" /></Link>
                         </li> */}
                       </ul>
                     </div>
@@ -387,7 +387,7 @@ const AboutTab = () => {
                     <div className="card">
                       <div className="content">
                         <div className="imgBox">
-                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                          <Image placeholder="blur" src={photoUrl} alt={`${designation} image`} className="img" />
                         </div>
                         <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
                           <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
@@ -403,7 +403,7 @@ const AboutTab = () => {
                           )}
                         </li>
                         {/* <li className="list02">
-                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        <Link href={linkedin}><Image placeholder="blur" src={Linkedin} alt="{name} linkedin profile" /></Link>
                         </li> */}
                       </ul>
                     </div>
@@ -423,7 +423,7 @@ const AboutTab = () => {
                     <div className="card">
                       <div className="content">
                         <div className="imgBox">
-                          <Image src={photoUrl} alt={`${designation} image`} className="img" />
+                          <Image placeholder="blur" src={photoUrl} alt={`${designation} image`} className="img" />
                         </div>
                         <div className="contentBox text-center mt-2.5 text-xl text-darkBlue font-semibold">
                           <h3>{name} <br /><span className="text-lg text-silver font-medium">{designation}</span></h3>
@@ -439,7 +439,7 @@ const AboutTab = () => {
                           )}
                         </li>
                         {/* <li className="list02">
-                        <Link href={linkedin}><Image src={Linkedin} alt="{name} linkedin profile" /></Link>
+                        <Link href={linkedin}><Image placeholder="blur" src={Linkedin} alt="{name} linkedin profile" /></Link>
                         </li> */}
                       </ul>
                     </div>
