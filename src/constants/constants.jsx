@@ -14,7 +14,7 @@ import nav from "@/assets/icons/uxDesign/nav.png";
 import pen from "@/assets/icons/uxDesign/pen.svg";
 import search from "@/assets/icons/uxDesign/search.svg";
 import target from "@/assets/icons/uxDesign/target.png";
-import ScheduleCallButton from "@/Components/Shared/ScheduleCallButton/ScheduleCallButton";
+import ScheduleCallButton from "@/components/shared/ScheduleCallButton/ScheduleCallButton";
 
 // home page bottom Banner content
 export const homeBanner = {
@@ -37,7 +37,7 @@ export const webDesignHeadingContent = {
         <span className="text-skin-tertiary mx-4"><br /> Web Design Magic</span>
       </h1>
       <div className="text-center">
-        <ScheduleCallButton></ScheduleCallButton>
+        <ScheduleCallButton />
       </div>
     </div>
   ),
@@ -165,7 +165,7 @@ export const uiDesignHeadingContent = {
         <span className="text-skin-tertiary mx-4"><br />UI/UX Design</span>
       </h1>
       <div className="text-center">
-        <ScheduleCallButton></ScheduleCallButton>
+        <ScheduleCallButton />
       </div>
     </div>
   ),
@@ -283,7 +283,7 @@ export const webHeadingContent = {
         <span className="text-skin-tertiary mx-4"> <br />Web Development</span>
       </h1>
       <div className="text-center">
-        <ScheduleCallButton></ScheduleCallButton>
+        <ScheduleCallButton />
       </div>
     </div>
   ),
@@ -407,7 +407,7 @@ export const graphicsHeadingContent = {
         Slashes Through Noise and Conquers Hearts
       </h1>
       <div className="text-center">
-        <ScheduleCallButton></ScheduleCallButton>
+        <ScheduleCallButton />
       </div>
     </div>
   ),
@@ -520,7 +520,7 @@ export const digitalHeadingContent = {
         Solutions for Your Unstoppable Growth
       </h1>
       <div className="text-center">
-        <ScheduleCallButton></ScheduleCallButton>
+        <ScheduleCallButton />
       </div>
     </div>
   ),
@@ -640,7 +640,7 @@ export const appHeadingContent = {
         Slashes Through Competition and Claims Market Share{" "}
       </h1>
       <div className="text-center">
-        <ScheduleCallButton></ScheduleCallButton>
+        <ScheduleCallButton />
       </div>
     </div>
   ),

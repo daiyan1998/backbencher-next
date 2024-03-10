@@ -152,7 +152,9 @@ export function Nav() {
   return (
     <Navbar shadow={false} color="transparent" className="px-0 py-6">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <Image className="cursor-pointer h-10" src={logo} alt="BIH Logo" />
+        <Link href='/'>
+          <Image className="cursor-pointer h-10" src={logo} alt="BIH Logo" />
+        </Link>
         <div className="hidden lg:block">
           <NavList />
         </div>
